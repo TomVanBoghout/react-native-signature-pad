@@ -57,8 +57,8 @@ class SignaturePad extends Component {
   };
 
   clear = () => {
-    this.setState({base64DataUrl: props.dataURL || null});
-    this.props.onChange({base64DataUrl: this.state.base64DataUrl});
+    this.setState({base64DataUrl: null});
+    this.props.onChange({base64DataUrl: null});
   };
 
   render = () => {
