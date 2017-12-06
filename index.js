@@ -56,6 +56,11 @@ class SignaturePad extends Component {
     }
   };
 
+  clear = () => {
+    this.setState({base64DataUrl: props.dataURL || null});
+    this.props.onChange({base64DataUrl: this.state.base64DataUrl});
+  };
+
   render = () => {
     return (
         <WebView automaticallyAdjustContentInsets={false}
