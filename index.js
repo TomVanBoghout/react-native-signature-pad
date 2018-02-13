@@ -16,16 +16,6 @@ import injectedErrorHandler from './injectedJavaScript/errorHandler';
 import injectedExecuteNativeFunction from './injectedJavaScript/executeNativeFunction';
 
 class SignaturePad extends Component {
-
-  static propTypes = {
-    defaultHeight: PropTypes.number,
-    defaultWidth: PropTypes.number,
-    onChange: PropTypes.func,
-    style: View.propTypes.style,
-    penColor: PropTypes.string,
-    dataURL: PropTypes.string,
-  };
-
   static defaultProps = {
     onChange: () => {
     },
